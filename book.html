@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>Hotel Booking</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> 
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <style>
+            body{
+            
+                color: wheat;
+                background-color:cadetblue;
+                height: 20px;
+            }
+            
+            h1{
+                color: blueviolet;
+            }
+            form{
+                color:red;
+            }
+            h2{
+                color:dodgerblue;
+            }
+            h4{
+                color:brown;
+            }
+            body.background{
+                opacity: 20%;
+            }
+        
+        </style>
+
+    <body>
+       
+       <!-- <body background="background.jpeg"> -->
+       <div class="container-fluid">
+        <h1>Booking Your Favourite Room</h1>
+        <form>
+            <div class="form-group">
+                <label for="nm">Enter your Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Total Number of people:</label>
+                <input type="number" class="form-control" id="age" placeholder="00" name="age">
+            </div>
+
+            <div class="form-group">
+                <label for="db">Check-In Date:</label>
+                <input type="date" class="form-control" id="db" placeholder="Enter Arrival date" name="db">
+            </div>
+
+            <div class="form-group">
+                <label for="dbo">Check-Out Date:</label>
+                <input type="date" class="form-control" id="dbo" placeholder="Enter departure date" name="dbo">
+            </div>
+
+            <div class="dropdown">
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                    Payment Mode
+                </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#"> Cash</a>
+                <a class="dropdown-item" href="#"> Online</a>
+            </div>
+
+            <h2>Note:</h2><h4>Please bring Aadhar-Card on the date of chech-in.</h4>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember">Remember me 
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+       </div>
+       
+       <script type="text/javascript"> /*our js starts from here*/
+        var x=confirm("submit?"); /*it is inbuilt function */
+        if(x==true)
+        {
+         document.write("you pressed submit button");
+        }
+        else
+        {
+         document.write("you pressed Cancel button");
+        }
+     </script>
+
+    </body>
+</html>
